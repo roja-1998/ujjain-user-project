@@ -1,0 +1,451 @@
+@import url('https://fonts.cdnfonts.com/css/aventi');
+
+body{
+    font-family: 'Roboto';
+    /* font-family: Inter,sans-serif !important; */
+    margin: 0px;
+
+}
+
+#main-sec {
+    display: flex;
+    position: relative;
+}
+
+#image-sec {
+    width: 700px;
+    height: 700px;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.loader {
+    display: none;
+    top: 303px;
+    left: 900px;
+    position: absolute;
+    margin-top: 40px;
+    margin-right: 50px;
+    border: 3px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 3px solid #FF5F1F;
+    width: 25px;
+    height: 25px;
+    animation: spinner 4s linear infinite;
+    z-index: 20;
+}
+  
+@keyframes spinner {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+
+
+
+/*         Auto slide img css                  */
+
+
+.mySlides {
+    display: none;
+    width: 650px;
+    height: 650px;
+}
+
+.Big_imgs {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.Small_images {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 650px;
+    height: 650px;
+    position: relative;
+
+
+}
+
+.div_smallimg {
+    position: absolute;
+    top: 160px;
+    left: 140px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 8px 12px;
+    color: white;
+   
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+/* The dots/bullets/indicators */
+
+#dots_div {
+    position: absolute;
+    bottom: 150px;
+    left: 215px;
+}
+
+.dot {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: solid 2px white;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+   
+}
+
+.active {
+    background-color: white;
+}
+
+/* Fading animation */
+/* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+} */
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+#Mobile_logodiv{
+    display: none;
+}
+
+
+#login-sec {
+    width: 600px;
+    height: 600px;
+    margin-top: 40px;
+}
+
+#ujjain-logo {
+    width: 250px;
+}
+
+#welcome-to-h1 {
+
+ 
+    font-size: 29px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#ujjain-dharshan {
+    font-size: 50px;
+    /* font-family: Aventi; */
+    font-family: 'Aventi';
+    font-weight: bolder;
+    color: #ff5c02;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+#Please-login {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+#Please-register {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+
+#login_error_msg{
+    width: 350px;
+    color: red;
+    font-weight: 600;
+}
+
+#login_error_msg::first-letter{
+    text-transform: capitalize;
+}
+.error-msg{
+    color: #ff0000;
+   
+}
+
+.success-msg{
+    color: #00bf4c;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 502px;
+    font-size: 21px; 
+}
+
+
+
+#Please-reset {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+#Please-enter-otp {
+    margin-top: 0px;
+    font-size: 18px;
+}
+::placeholder{
+    color:#fbcaaf;
+}
+.Register_inputs{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    color: #ff5c02;
+    height: 20px;
+    margin-top: 15px;
+}
+/* .Register_inputs :active{
+
+    border: solid 1px #ff5c02;
+
+} */
+#mobile-num {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    color: #ff5c02;
+    height: 20px;
+    margin-top: 15px;
+}
+.mobile_no_inputs{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    color: #ff5c02;
+    height: 20px;
+    margin-top: 15px;
+}
+#Password {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    color: #ff5c02;
+    height: 20px;
+    margin-top: 17px;
+}
+
+#login-btn {
+    width: 320px;
+    height: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #ff5c02;
+    color: white;
+    border: solid 1px #ff5c02;
+    border-radius: 9px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+    font-weight: 600;
+}
+
+.a-regis-reset {
+
+    color: #ff5c02;
+    font-weight: 600;
+  
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#a-login {
+    color: #ff5c02;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.p-regis-reset {
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+}
+
+#p-already {
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.input-otp {
+    width: 20px;
+    height: 20px;
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    border: solid 1px #ff5c02;
+    border-radius: 8px;
+}
+
+#otp-blur {
+    width: 350px;
+    opacity: 0.4;
+}
+
+#dont-rec-otp {
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+}
+
+#a-otp {
+    color: #ff5c02;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form1{
+    position: relative;
+}
+.eye_icon{
+    width: 26px;
+    position: absolute;
+    top: 81px;
+    left: 286px;
+    cursor: pointer;
+}
+
+/* .hotel_price_in_small{
+
+} */
+
+
+
+/*             On smaller screens                */
+
+@media only screen and (max-width: 450px)
+{
+
+    
+body{
+    width: 710px;
+    height: 1300px;
+}
+#main-sec {
+    display: block;
+    width: 700px;
+    height: 1240px;
+}
+#image-sec{
+    width: 540px;
+    height: 760px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.slideshow-container{
+    height: 570px;
+    width: 540px;
+    position: relative;
+}
+.Big_imgs{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    filter: blur(3px);
+}
+.div_smallimg{
+    position: absolute;
+    top: 117px;
+    left: 124px;
+}
+.Small_images {
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+}
+#dots_div{
+    position: absolute;
+    bottom: 150px;
+    left: 180px;
+}
+.text {
+    font-size: 11px
+}
+
+#Mobile_logodiv{
+    display: flex !important;
+    height: 150px;
+    width: 520px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+#ujjain-logo1{
+
+    display: block !important;
+    width: 330px;
+}
+#ujjain-logo{
+    display: none !important;
+}
+
+#login-sec{
+    width: 430px;
+    height: 470px;
+    margin-left: 170px;
+    margin-top: 0px;
+    padding: 20px 15px 20px 30px;
+}
+
+
+
+
+
+}
+
+    
+
+
+
+
+
+

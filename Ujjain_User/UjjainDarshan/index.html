@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/PNG" href="../Images/logo_ujjain.PNG">
+    <link rel="stylesheet" href="../CSS/Ujjain home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ujjain home</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script src="./Java Script/Home_script.js"></script> -->
+    <!-- <script src="./JavaScript/indexHome.js"></script> -->
+    <!-- <script src="../JavaScript/HotelBooking.js"></script> -->
+    <!-- <script src="../JavaScript/Puja.js"></script> -->
+    <script src="../JavaScript/ConstVariables.js"></script>
+    <script src="../JavaScript/UjjainDarshan.js"></script>
+   
+
+</head>
+
+<body>
+
+
+    <!--  Navbar section -->
+
+    <nav id="Dashboard-nav">
+        <div id="Dashsun">
+            <span class="nav-sun"> Mon 18 Dec</span> <br>
+            <span class="nav-sun1"> <span id="Ujjaindatetime"></span> </span>
+        </div>
+        <div id="Dashbhanu">
+            <a class="ViewProfilepage_Atag" href="../Profile/ ">
+                <div id="viewprofile_div" onclick=""> 
+                        <p class="nav-sun" id="Login_User_Name">chaithanya </p>
+                        <p class="nav-sun view_txt_sun" id="viewprofile">View profile > </p>
+                </div>
+            </a>
+            <img id="dashboardprofilelogo" src="../Images/profile logo.PNG" alt="">
+
+            <!-- <a href="../Login.html">
+                <img id="logouticon" onclick="Logout()" src="../Images/logouticon.png" alt="" srcset="">
+            </a> -->
+        </div>
+    </nav>
+                    <script type="text/javascript">
+                        function preventBack() { window.history.forward();  }
+                        setTimeout("preventBack()", 0);
+                        window.onunload = function () { null };
+                    </script>
+
+
+    <!-- aside and main tags parent-section -->
+    <section id="aside_main_parentsection">
+        <!-- aside section starts here......-->
+
+            <aside id="sidebar">
+                <img id="ujjain-logo" src="../Images/ujjain-darshan.png" alt="">
+                <a href="../Home/ ">
+                    <div id="home-div" class="aside_content_divs" onclick="Home()">Home </div>
+                </a>
+                <a href="../HotelBooking/ ">
+                    <div id="hotel-div" class="aside_content_divs " onclick="hotelBooking()">Hotel Booking </div>
+                </a>
+                <a href="../PujaBooking/ ">
+                <div id="pujabooking-div" class="aside_content_divs " onclick="pujaBooking()">Puja Booking </div>
+                </a>
+                <a href="../UjjainDarshan/ ">
+                <div id="UjjainDarshan-div" class="aside_content_divs ColorAside_divs" onclick="UjjainDarshan()">Ujjain Darshan </div>
+                </a>
+                <a href="../Omkareshwar/ ">
+                <div id="Omkareshwar-div" class="aside_content_divs" onclick="Omkareshwar()">Omkareshwar Tour </div>
+                </a>
+                <a href="../MaaBaglamukhi/ ">
+                    <div id="MaaBaglamukhi-div" class="aside_content_divs" onclick="MaaBaglamukhi()">Maa Baglamukhi Tour</div>
+                </a>
+                <a href="../TaxiServices/ "> 
+                    <div id="TaxiServices-div" class="aside_content_divs" onclick="TaxiServices()">Taxi Services</div>
+                </a>
+                <a href="../AirportRides/ ">
+                    <div id="AirportRides-div" class="aside_content_divs" onclick="AirportRides()">Airport Rides</div>
+                </a>
+                <a href="../Shopping/ ">
+                    <div id="shopping-div" class="aside_content_divs" onclick="Shopping()">Shopping </div>
+                </a>
+                <a href="../About/ ">
+                    <div id="AboutUjjain-div" class="aside_content_divs" onclick="AboutUjjain()">About Ujjain</div>
+                </a>
+            </aside>
+    
+
+            
+        <!--      Ujjain Darshan main   starts from here  .....             -->
+
+        <main id="UjjainDarshan_main">
+
+            <section class="top-visited-places-sec">
+                <h3 style="margin-bottom: 10px;">Top Visited Places</h3>
+
+                <div class="top-visited-places-div">
+
+                    <div #swiperRef="" class="swiper mySwiper" id="swiper_ujjain_up">
+                        <div class="swiper-wrapper" id="swiper-wrapper_ujjain_up">
+
+
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+                            <div class="swiper-slide ujjain_swiperslides"> </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="next_prev_btn_ujjain_up_div">
+                        <div class="swiper-button-next" id="swiper-button-next_ujjain_up"
+                            onclick="swiperBtn_ujjain_up()"></div>
+                        <div class="swiper-button-prev" id="swiper-button-prev_ujjain_up"> </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+
+                </div>
+
+
+                <!--                           ujjain dharshan popup      -->
+
+                <div id="ujjain_popup" style=" display: none; position: relative;">
+
+                    <div id="ujjain_popupdiv">
+                        <div class="fisrt_sec_popup">
+                            <h3 class="popup_pujabooking_h3">Guide Booking</h3>
+                            <img class="close_icon" src="../Images/close icon.png" onclick="ujjainBooking_closePopUp()"
+                                alt="" srcset="">
+                        </div>
+                        <h4 class="popup_pujapackage_name">Visiting Places</h4>
+
+                        <div class="puja_package_divs">
+                            <img class="Package_imgs ujjainpopup_img" src="" alt="" srcset="">
+                            <div>
+                                <span class="pujaNames ujjainname"></span>
+                                <div style="display: flex;">
+                                    <img class="Package_location_img" src="../Images/destination_popup_icon.png"
+                                        style="width: 19px;" alt="">
+                                    <span class="Package_templeName ujjainkm" style="font-size: 11px;">2.3 km</span>
+
+                                    <span class="Package_pricenum ujjainpopup_price">&#8377; 250</span>
+                                </div>
+                            </div>
+                            <img class="ujjain_delete_icon" onclick="ujjain_delete()" src="../Images/delete_icon.png"
+                                alt="">
+                        </div>
+
+
+                        <!-- add one more puja 
+
+                           <div class="puja_package_divs sec_packagediv" style="visibility: hidden;">
+                                <img class="Package_imgs ujjainpopup_img"  src="" alt="" srcset="">
+                                <div>  
+                                    <span class="pujaNames ujjainname"></span>
+                                    <div style="display: flex;">
+                                        <img class="Package_location_img" src="../Images/destination_popup_icon.png" style="width: 19px;"  alt="" >
+                                        <span class="Package_templeName ujjainkm" style="font-size: 11px;">2.3 km</span>
+                                    
+                                        <span class="Package_pricenum ujjainpopup_price"  >&#8377; 250</span>
+                                    </div>
+                                </div>
+                                    <img class="ujjain_delete_icon" src="../Images/delete_icon.png" alt="">
+                            </div>
+
+                            <div class="puja_package_divs sec_packagediv" style="visibility: hidden;">
+                                <img class="Package_imgs ujjainpopup_img"  src="" alt="" srcset="">
+                                <div>  
+                                    <span class="pujaNames ujjainname"></span>
+                                    <div style="display: flex;">
+                                        <img class="Package_location_img" src="../Images/destination_popup_icon.png" style="width: 19px;"  alt="" >
+                                        <span class="Package_templeName ujjainkm" style="font-size: 11px;">2.3 km</span>
+                                    
+                                        <span class="Package_pricenum ujjainpopup_price"  >&#8377; 250</span>
+                                    </div>
+                                </div>
+                                    <img class="ujjain_delete_icon" src="../Images/delete_icon.png" alt="">
+                            </div> -->
+
+
+
+                        <div id="ins_div_content">
+
+                            <h3 class="booking_ins" id="ujjain_ins">Booking Instructions :</h3>
+                            <ol class="hotelbooking_ol">
+                                <li class="li">Cash Payment only allowed. </li>
+                                <li class="li">Concerned person will pickup you from the Airport or <br> Bustop and Drop
+                                    you
+                                    at the Hotel by himself.</li>
+                                <li class="li">You can check-in to the hotel and Pay if you like the hotel.</li>
+                                <li class="li">You can change your Hotel at the same time to the best one.</li>
+
+                            </ol>
+                            <span class="total_fare">Total Fare</span>
+                            <span class="total_price ujjainpopup_price">&#8377; 360</span>
+                            <input type="button" class="popup_ujjain_btn" value="Book Guide"
+                                onclick="ujjainpackage_popup_btn()">
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div id="ujjainConfirmation_popupdiv" style="display: none;">
+                        <div class="fisrt_sec_popup">
+                            <h3 class="popup_pujabooking_h3">Guide Booking</h3>
+                            <img class="close_icon" src="../Images/close icon.png"
+                                onclick="ujjainConfirmation_closePopUp()" alt="" srcset="">
+                        </div>
+                        <img class="booking_sucessfull_img" src="../Images/sucessfullybooking_logo.png" alt="">
+                        <h1 class="sucessful_msg">Your Package Booking <br> Confirmed Successfully.</h1>
+                        <h5 class="Agent_msg ujjainconfirmsg" >Our Agent will pickup you from the Hotel or your current <br>
+                            location and take you to the temple and do the needful <br>
+                            things by himself.</h5>
+                        <h4 class="sucessful_ins">Booking Instructions :</h4>
+                        <ol class="sucessful_ol">
+                            <li class="li">Cash Payment only allowed. </li>
+                            <li class="li">Concerned person will pickup you from the Airport or Bustop and Drop you
+                                at the Hotel by himself.</li>
+                            <li class="li">You can check-in to the hotel and Pay if you like the hotel.</li>
+                            <li class="li">You can change your Hotel at the same time to the best one.</li>
+                        </ol>
+                        <span class="total_fare">Total Fare</span> <span class="total_price ujjainpopup_price">&#8377;
+                            950</span> <br>
+                        <!-- <div class="details_div">
+                            <div class="prof_div">
+                                <img class="profile_img" src="../Images/profile img.png" alt="">
+                                <div class="prof_details_div">
+                                    <span class="prof_name">Haswith Kumar</span> <br>
+                                    <span class="prof_no">Mobile: +91 9876543210</span>
+                                </div>
+                            </div>
+                            <div class="whats_msg_div">
+                                <img class="whats_msg_imgs" src="../Images/whatsapp logo.png" alt="">
+                                <img class="whats_msg_imgs" src="../Images/message icon.png" alt="">
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+
+                <!--    img  Loader  while fetching data from API...    -->
+
+                <div id="UjjainDarshan_TopVisitedplaces_loader" class="Top_loader ">
+                    <!-- <div class="loader"></div> -->
+                    <img class="Loader_img zoom-in-zoom-out" src="../Images/ujjain_logo_png.png" alt="">
+                </div>
+
+
+
+
+
+            </section>
+
+            <section class="nearby-visiting-places-sec">
+                <h3 style="margin-top: 0%;">Nearby Visiting Places</h3>
+
+                <div id="home_top_rated_divs">
+                    <div #swiperRef="" class="swiper mySwiper" id="swiper_ujjain_down">
+                        <div class="swiper-wrapper" id="swiper-wrapper_ujjain_down">
+
+
+                            <div class="swiper-slide ujjan_slides_down"> </div>
+                            <div class="swiper-slide ujjan_slides_down"> </div>
+                            <div class="swiper-slide ujjan_slides_down"> </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="next_prev_btn_ujjain_down_div">
+                        <div class="swiper-button-next" id="swiper-button-next_ujjain_down"
+                            onclick="swiperBtn_ujjain_down()"></div>
+                        <div class="swiper-button-prev" id="swiper-button-prev_ujjain_down"> </div>
+
+                    </div>
+
+
+                </div>
+
+                             <!--    img  Loader  while fetching data from API...    -->
+
+                        <div id="UjjainDarshan_hotels_loader_loader" class="bottum_loader ">                        
+                            <img class="Loader_img_bottum zoom-in-zoom-out" src="../Images/ujjain_logo_png.png" alt="">
+                        </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </section>
+<script src="../JavaScript/Sliders/UjjainSlider_down.js"></script>
+
+</body>
+</html>

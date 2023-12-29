@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/PNG" href="./Images/logo_ujjain.PNG">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link href="https://fonts.cdnfonts.com/css/aventi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+   
+    <script src="./JavaScript/Login.js"></script>
+    <title>Ujjain - Login</title>
+
+    
+</head>
+<body>
+
+    <section id="main-sec">
+
+        <div class="loader" id="Login_loader"></div>                        <!--  Loader in view profile  -->
+
+        <section id="image-sec">
+
+            <div id="Mobile_logodiv">
+                <img  id="ujjain-logo1" src="./Images/ujjain-darshan.png" alt="">
+              </div>
+            
+
+           <div class="slideshow-container">
+
+               <div class="mySlides fade">
+                   <img class="Big_imgs" src="./Images/image 1.PNG" alt="" srcset="">
+                   <div class="div_smallimg">
+                       <img class="Small_images" src="./Images/image 1.PNG">
+                       <div class="text">Ram Ghat</div>
+                   </div>
+               </div>
+       
+               <div class="mySlides fade">
+                   <img class="Big_imgs" src="./Images/image 2.PNG" alt="" srcset="">
+                   <div class="div_smallimg">
+                       <img class="Small_images" src="./Images/image 2.PNG">
+                       <div class="text">Mahakaleshwar Temple</div>
+                   </div>
+               </div>
+       
+               <div class="mySlides fade">
+                   <img class="Big_imgs" src="./Images/image 3.PNG" alt="" srcset="">
+                   <div class="div_smallimg">
+                       <img class="Small_images" src="./Images/image 3.PNG">
+                       <div class="text">Kaliadeh Palace</div>
+                   </div>
+               </div>
+       
+               <div class="mySlides fade">
+                   <img class="Big_imgs" src="./Images/image 4.PNG" alt="" srcset="">
+                   <div class="div_smallimg">
+                       <img class="Small_images" src="./Images/image 4.PNG">
+                       <div class="text">Shree Kal Bhairav Temple</div>
+                   </div>
+               </div>
+       
+               <div class="mySlides fade">
+                   <img class="Big_imgs" src="./Images/image 5.PNG" alt="" srcset="">
+                   <div class="div_smallimg">
+                       <img class="Small_images" src="./Images/image 5.PNG">
+                       <div class="text">Ved Shala</div>
+                   </div>
+               </div>
+       
+               <div id="dots_div">
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+                   <span class="dot"></span>
+               </div>
+           </div>
+
+
+
+        </section>
+
+        <section id="login-sec">
+
+            <img id="ujjain-logo" src="./Images/ujjain-darshan.png" alt="">
+
+            <h1 id="welcome-to-h1">Welcome to</h1>
+            <p id="ujjain-dharshan">Ujjain Dharshan</p>
+
+            <h2 id="Please-login">Please Login into your Account</h2>
+            <h2 id="Please-register" style="display: none;">Please Register with your Account</h2>
+            <h2 id="succesfull-registered" class="success-msg" style="display: none;"></h2>
+            <h2 id="Please-reset" style="display: none;">Please Reset your Account Password</h2>
+            <h2 id="succesfull-password-reset" class="success-msg" style="display: none;"></h2>
+            <h2 id="Please-enter-otp" style="display: none;">Please Enter OTP sent to your mobile </h2>
+
+
+            <div id="login-div-contents">
+
+                <form action="" class="form1">
+                <input type="number"  class="Mobile_number_inputs" onkeyup="myFunction()" placeholder="Mobile Number" id="mobile-num" name="mobilenumber" min="1000000000"  maxlength="10" required/>  <br>
+                <input type="password" placeholder="Password" id="Password"  name="password" required/> <br>
+                <img class="eye_icon" onclick="show_password_login()" src="./Images/icon_hide.jpg" alt="" srcset="">
+                 <input type="submit" value="Login"  id="login-btn" onclick="Login()" > 
+                 <p id="login_error_msg" ></p>
+                 <span id="demo"></span>
+
+                </form>
+                <p class="p-regis-reset">Don't have account ? <a class="a-regis-reset" onclick="Register()"> Register
+                    </a> Here</p>
+                <p class="p-regis-reset">Forgot Password ? <a class="a-regis-reset" onclick="Reset()"> Reset </a> Now
+                </p>
+            </div>
+
+            <div  id="Register-div-contents" style="display: none;">
+
+
+                <form  id="Register_form" action="" class="form2">
+                    <input  onkeydown="return /[a-z]/i.test(event.key)"  placeholder="User name" minlength="4" class="Register_inputs" id="Rig_username"
+                        name="username"  required />
+                         <br>
+                    <input type="email" placeholder="Email Address (Optional)" class="Register_inputs" id="Rig_email" name="email"  />
+                    <br>
+                    <input type="number" placeholder="Mobile Number" onkeyup="myReg_Mobile_no()" min="1000000000"  maxlength="10" class="Register_inputs Mobile_number_inputs" id="Rig_mobilenumber"
+                        name="mobileNumber" required /> <br>
+                    <input type="text" placeholder="Password" minlength="6" class="Register_inputs" id="Rig_password" name="password" required />
+                    <br>
+                                 <p id="error_message" class="error-msg" style="display: none;"></p>
+                     <button type="submit" id="login-btn" onclick="">Submit</button>
+                    
+
+                </form>
+
+                <p id="p-already">Already have an account ? <a id="a-login" href="index.html"> Login </a> Here </p>
+
+            </div>
+
+
+            <div id="Register-otp-contents" style="display: none;">
+
+                <div id="otp-blur" onclick="otpblur()">
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+                    <input type="password" maxlength="1" name="" class="input-otp" />
+
+                    <a href="index.html"> <button id="login-btn"> Submit</button> </a>
+                </div>
+
+                <p id="dont-rec-otp"> Don't received OTP ? <a id="a-otp">Resend</a> Now </p>
+
+            </div>
+
+
+
+            <div id="Reset-div-contents" style="display: none;">
+
+                <form action="" id="form3" class="form3" >
+
+                    <input type="number" onkeyup="myReset_Mobile_no()" min="1000000000" placeholder="Mobile Number" class="mobile_no_inputs Mobile_number_inputs" maxlength="10"  name="mobilenumber"  required/> 
+
+                    <input type="text" placeholder="New Password" class="mobile_no_inputs" id="" name="newpassword" minlength="5" required/> <br>
+                    <input type="text" placeholder="Confirm Password"  id="Password" name="confirmpassword" minlength="5" required/> <br>
+                    <p id="Reset_error_msg" class="error-msg" ></p>
+
+                    <input type="submit" id="login-btn" value="Submit" />
+
+                </form>
+
+                <p id="p-already">Remember your Password ? <a id="a-login" href="index.html"> Login </a> Here </p>
+
+            </div>
+
+        </section>
+    </section>
+
+
+</body>
+</html>

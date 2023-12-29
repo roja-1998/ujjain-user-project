@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/PNG" href="../Images/logo_ujjain.PNG">
+    <link rel="stylesheet" href="../CSS/Ujjain home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ujjain home</title>
+    <!-- <script src="./Java Script/Home_script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../JavaScript/ViewProfile.js"></script>
+    
+
+</head>
+
+<body>
+
+
+    
+    <!--  Navbar section -->
+
+    <nav id="Dashboard-nav">
+        <div id="Dashsun" class="viewdashBoard">
+            <span class="nav-sun"> Mon 17 Dec</span> <br>
+            <span class="nav-sun1"> <span class="datetime" id="Viewdatetime"></span> </span>
+        </div>
+        <div id="Dashbhanu">
+           
+                <div id="viewprofile_div" onclick="viewProfile()" > 
+                        <p class="nav-sun" id="Login_User_Name"> </p>
+                        <!-- <p class="nav-sun view_txt_sun" id="viewprofile">View profile > </p> -->
+                </div>
+           
+            <img id="dashboardprofilelogo" src="../Images/profile logo.PNG" alt="">
+
+            <a href="../">
+                <img id="logouticon" onclick="Logout()" src="../Images/logouticon.png" alt="" srcset="">
+            </a>
+        </div>
+    </nav>
+                    <script type="text/javascript">
+                        function preventBack() { window.history.forward();  }
+                        setTimeout("preventBack()", 0);
+                        window.onunload = function () { null };
+                    </script>
+
+
+    <!-- aside and main tags parent-section -->
+    <section id="aside_main_parentsection">
+        <!-- aside section starts here......-->
+
+            <aside id="sidebar">
+                <img id="ujjain-logo" src="../Images/ujjain-darshan.png" alt="">
+
+                <a href="../Home ">
+                   <div id="" class="aside_content_divs" onclick="Home()">Home </div>
+                </a>
+
+                <a href="../HotelBooking/ ">
+                    <div id="hotel-div" class="aside_content_divs" onclick="hotelBooking()">Hotel Booking </div>
+                </a>
+                <a href="../PujaBooking/ ">
+                    <div id="pujabooking-div" class="aside_content_divs" onclick="pujaBooking()">Puja Booking </div>
+                </a>
+                <a href="../UjjainDarshan/ "> 
+                    <div id="UjjainDarshan-div" class="aside_content_divs" onclick="UjjainDarshan()">Ujjain Darshan </div>
+                </a>
+                <a href="../Omkareshwar/ ">
+                    <div id="Omkareshwar-div" class="aside_content_divs" onclick="Omkareshwar()">Omkareshwar Tour </div>
+                </a>
+                <a href="../MaaBaglamukhi/ ">
+                    <div id="MaaBaglamukhi-div" class="aside_content_divs" onclick="MaaBaglamukhi()">Maa Baglamukhi Tour</div>
+                </a>
+                <a href="../TaxiServices/ "> 
+                    <div id="TaxiServices-div" class="aside_content_divs" onclick="TaxiServices()">Taxi Services</div>
+                </a>
+                <a href="../AirportRides/ ">
+                    <div id="AirportRides-div" class="aside_content_divs" onclick="AirportRides()">Airport Rides</div>
+                </a>
+                <a href="../Shopping/ ">
+                    <div id="shopping-div" class="aside_content_divs" onclick="Shopping()">Shopping </div>
+                </a>
+                <a href="../About/ ">
+                    <div id="AboutUjjain-div" class="aside_content_divs" onclick="AboutUjjain()">About Ujjain</div>
+                </a>
+            </aside>
+    
+          <!--   view  Profile main content  starts from here.......-->
+
+        <main id="profile_view_main" style="display: flex;">
+            <div id="profile_contents"></div>
+            <div class="loader" id="profile_loader"></div>                        <!--  Loader in view profile  -->
+
+            <div id="profile_div">
+                <div id="div_top_profile">
+
+                    <h3 id="profile_h3">Profile</h3>
+                    <img src="../Images/combined-shape.png" onclick="Edit_profileIcon()" id="profile_edit_icon" alt=""> <br>
+                    <img src="../Images/viewProfile logo.png" id="viewProfile_img_logo" alt="" srcset=""> 
+
+                        <div class="name_no_div">  
+                            <form action="" id="profile_update_form">
+
+                                <input onkeydown="return /[a-z]/i.test(event.key)" id="username_viewprofile" readonly value="chaithaya" name="username_update"></input>
+                                <img src="../Images/phone icon.png" id="phone_icon" alt="" srcset="">
+                                <span id="userNo_viewprofile">+91
+                                    <input type="number"  min="1000000000" maxlength="10" readonly  id="userMobile_viewprofile" value="8100000000" name="userMB_update" ></input>
+                                    <input type="submit" onclick="userUpdateBtn()" id="Update_btn">
+                                </span>
+                            </form>   <br>
+                        </div>  
+
+                        <div id="div2_profile">
+                            <img src="../Images/History icon.png" class="profile_icon" alt="">
+                            <span class="pnames">History</span>
+                            <div id="H_P">
+                                <div>
+                                    <p class="num_div1">12</p>
+                                    <p class="text_div1">Hotels</p>
+                                </div>
+                                <div>
+                                    <p class="num_div1">18</p>
+                                    <p class="text_div1">Pujas</p>
+                                </div>
+                                <div>
+                                    <p class="num_div1">18</p>
+                                    <p class="text_div1">Places</p>
+                                </div>
+                                <div>
+                                    <p class="num_div1">12</p>
+                                    <p class="text_div1">Rides</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="profile_div2_childs shop_pro">
+                    <h3 class="childs_name">Airport Rides  <span id="AirportBookings_count">2</span> </h3>
+                        <div class="All_bookings_scroll " id="AirportBook_inViewprofile">      
+                        </div>
+                </div>
+                <div class="profile_div2_childs shop_pro" id="shopdiv_parent">
+                    <h3 class="childs_name">Shopping  <span id="ShoppingBookings_count">5</span> </h3>
+                        <div class="All_bookings_scroll " id="ShoppingBKG_inViewprofile">      
+                        </div>
+                </div>
+            </div>
+
+            <div id="profile_div2">
+                <div class="profile_div2_childs">
+                    <h3 class="childs_name">Hotels  <span id="HotelBookings_count">3</span> </h3>
+                        <div class="All_bookings_scroll " id="hotelbook_inViewprofile">   </div>
+                </div>
+                <div class="profile_div2_childs">
+                    <h3 class="childs_name">Visited Places  <span id="VisitedBookings_count">4</span> </h3>
+                    <div class="All_bookings_scroll" id="UjjainBookings_inViewProfile">  </div>
+                </div>
+
+                <div class="profile_div2_childs">
+                    <h3 class="childs_name">Attended Pujas  <span id="PujaBookings_count">5</span> </h3>
+                        <div class="All_bookings_scroll " id="Puja_Bookings_inViewProfile">  </div>
+                </div>
+                <div class="profile_div2_childs">
+                    <h3 class="childs_name">Taxi Rides <span id="TaxiBookings_count">3</span> </h3>
+                    <div class="All_bookings_scroll" id="TaxiBookings_viewProfile">       </div>       
+                </div>
+            </div>
+
+        </main>    <!--   view  Profile main content  Ends  here.......      -->
+
+
+
+    </section>  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,4152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    /* font-family: Inter, sans-serif !important; */
+    height: 750px;
+    position: relative;
+
+}
+
+
+
+ol{
+    font-family: Inter, sans-serif ;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+/* img  Loader  while fetching data from API CSS...     */
+
+.Top_loader{
+    display: none;
+    width: 700px;
+    height: 250px;
+    position: absolute;
+    left: 620px;
+    top: 160px;
+    z-index: 10;
+
+}
+/* #container {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+    position: relative;
+  } */
+
+ .loader {
+    display: none;
+    top: 250px;
+    left: 600px;
+    position: absolute;
+    margin-top: 40px;
+    margin-right: 50px;
+    border: 6px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 6px solid #FF5F1F;
+    width: 40px;
+    height: 40px;
+    animation: spinner 4s linear infinite;
+    z-index: 20;
+}
+  
+@keyframes spinner {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+} 
+
+.zoom-in-zoom-out {
+    margin: 24px;
+    width: 40px;
+    height: 50px;
+   
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+.Loader_img{
+
+    width: 251px;
+    height: 100px;
+}
+
+
+/* Bottum loader */
+
+.bottum_loader{
+
+    display: none;
+    width: 700px;
+    height: 250px;
+    position: absolute;
+    left: 690px;
+    top: 520px;
+    z-index: 10;
+
+}
+.hotelBooking_BL{
+    top: 600px;
+}
+.Loader_img_bottum{
+    width: 120px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/*   Navbar CSS starts from here          */
+#Dashboard-nav {
+    display: flex;
+    width: 1425px;
+    height: 50px;
+    margin-left: 145px;
+    background-color: #FF5F1F;
+}
+
+#Dashsun {
+    height: 30px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-left:   1110px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-right: solid 2px #ffffff;
+    border-left: solid 2px #ffffff;
+}
+.viewdashBoard{
+    margin-left: 1085px !important;
+}
+.nav-sun {
+    color: #fff;
+    font-size: 16px;
+    margin: 0px;
+  
+}
+.view_txt_sun{
+    width: 84px;
+    height: 13px;
+    margin-top: 5px;
+}
+
+.nav-sun1 {
+    color: #fff;
+    font-size: smaller;
+  
+}
+
+#viewprofile_div {
+    cursor: pointer;
+   
+    width: 140px;
+    height: 40px;
+}
+
+#Dashbhanu {
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+#viewprofile {
+    font-size: 11px;
+}
+
+#Login_User_Name {
+    font-weight: 600;
+}
+
+#dashboardprofilelogo {
+    width: 40px;
+    height: 42px;
+    position: relative;
+    top: -45px;
+    right: -112px;
+}
+#logouticon{
+    position: relative;
+    top: -48px;
+    left: 120px;
+    cursor: pointer;
+}
+#aside_main_parentsection {
+    display: flex;
+}
+
+/* aside css starts from here */
+
+#sidebar {
+    font-size: 12px;
+    font-weight: bold;
+    /* padding-left: 10px; */
+    width: 200px !important;
+    height: 715px;
+    position: relative;
+    top: -50px;
+    margin-left: 0px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#ujjain-logo {
+    width: 175px;
+    margin-left: 8px;
+    height: 65px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+
+}
+
+/* #home-div {
+    background-color: #FF5F1F;
+    color: white;
+    height: 35px;
+    padding-left: 18px;
+    padding-top: 12px;
+    cursor: pointer;
+} */
+
+.aside_content_divs {
+    height: 35px;
+    color: black;
+    padding-left: 18px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.ColorAside_divs{
+    background-color: #FF5F1F;
+    color: white;
+    height: 35px;
+    padding-left: 18px;
+    padding-top: 12px;
+    cursor: pointer; 
+}
+
+.whiteAside_divs{
+    background-color: white; 
+    color:  #FF5F1F;
+}
+
+/*                                      main Profile css                        */
+
+#profile_view_main {
+
+position: relative;
+    width: 1170px;
+    height: 1040px;
+    margin-top: 30px;
+    margin-left: 30px;
+  
+}
+
+#profile_div {
+    width: 350px;
+    height: 950px;
+    padding: 15px;
+    padding-top: 0px;
+    margin-right: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff; */
+}
+#div_top_profile{
+    width: 336px;
+    height: 283px;
+    padding-left: 15px;
+    padding-top: 20px;
+    border-radius: 8px;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+    margin-bottom: 20px;
+    position: relative;
+}
+#profile_h3 {
+    display: inline;
+    width: 70px;
+    margin-top: 5px;
+}
+
+#profile_edit_icon {
+    margin-left: 8px;
+    width: 16px;
+    cursor: pointer;
+}
+#Update_btn{
+    width: 73.66666599999999px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 136px;
+    color: #FF5F1F;
+    background-color: #fff;
+    border: #FF5F1F solid 1px;
+    cursor: pointer;
+}
+#viewProfile_img_logo {
+    width: 100px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.name_no_div{
+    width: 230px;
+    position: relative;
+    top: -81px;
+    left: 105px;
+}
+#username_viewprofile {
+    width: 185px;
+    font-size: 30px;
+    color: #ff5c02;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+    font-weight: bold;
+}
+#userMobile_viewprofile{
+    width: 120px;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+#phone_icon {
+    width: 25px;
+    margin-left: 21px;
+    margin-top: 5px;
+    position: relative;
+    top: 5px;
+}
+
+#userNo_viewprofile {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+#email_icon {
+    width: 25px;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
+}
+
+#userEmail_viewprofile {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+#div1_profile {
+    margin-top: 60px;
+    width: 248px;
+    height: 95px;
+    padding: 10px 5px 2px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 10px;
+
+}
+
+.profile_icon {
+    width: 25px;
+}
+
+.pnames {
+    color: #ff5c02;
+}
+
+#P_H {
+    display: flex;
+}
+
+#H {
+    margin-left: 80px;
+}
+
+.num_div1 {
+    color: #000;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.text_div1 {
+    margin-top: 0px;
+    color: #b0b0b0;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+#div2_profile {
+    width: 300px;
+    height: 96px;
+    padding: 5px 5px 2px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    top: -60px;
+    left: -2px;
+}
+
+#H_P {
+    height: 70px;
+    width: 284px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#shopdiv_parent{
+    margin-top: 20px;
+}
+
+#profile_div2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 760px;
+    height: 650px;
+    padding: 0px;
+    /* border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;  */
+}
+
+.profile_div2_childs {
+
+    width: 352px;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+.shop_pro{
+    padding-top: 1px;
+}
+.childs_name {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.All_bookings_scroll{
+    height: 220px;
+    width: 310px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 20px;
+}
+.All_bookings_scroll::-webkit-scrollbar{    display: none;  }
+.child_divs {
+    display: flex;
+    width: 290px;
+    height: 60px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.hotel_build_imgs {
+    width: 65px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.hotel_names {
+    height: 25px;
+    color: #ff5c02;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.price {
+    width: 80px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.price1 {
+    width: 80px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0px 6px;
+    margin-left: 145px;
+    margin-top: -26px;
+    
+}
+.pricepbkg{
+    margin-left: 38px;
+}
+.currency_symbol {
+    color: #ff5c02;
+}
+
+.visited_imgs {
+    width: 55px;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+
+}
+
+.Loc_imgs {
+    width: 15px;
+    margin: -4px 0px;
+}
+
+.puja_names {
+    height: 22px;
+    color: #ff5c02;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.T_names {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+.parent_taxi_bookings_div{
+    margin-left: 18px;
+    position: relative;
+}
+.F_T_div{
+    display: flex;
+    height: 17px;
+    width: 230px;
+    margin-top: 10px;
+}
+.p_tag_from_to{
+    width: 50px;
+    margin: 0px;
+    color: gray;
+    font-size: 12px;
+}
+.taxiprice_in_vieprofile{
+    position: absolute;
+    top: 20px;
+    left: 31px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 164px;
+}
+
+/* Update profile Css */
+
+.profile-update-section{
+    height: 500px;
+    width: 500px;
+    padding-left: 0px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+/* .update-profile-heading01 {
+   
+} */
+#can_updatebtn_div{
+    display: flex;
+}
+#update_btn{
+    width: 200px;
+    height: 35px;
+    background-color:  #ff5c02;
+    color: white;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#cancel_profile_btn{
+
+    width: 200px;
+    height: 35px;
+    background-color:  white;
+    color:  #ff5c02;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  
+    margin-top: 10px;
+}
+.update_form {
+    margin-left: 16px;
+    margin-top: 45px;
+}
+.update-name01 {
+    border: solid 1px #FF5F1F;
+    border-radius: 5px;
+    height: 40px;
+    width: 402px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 25px;
+    background-color: white;
+    color: #FF5F1F;
+    margin-bottom: 13px;
+ 
+}
+ 
+.update-name01::placeholder{
+    color: #FF5F1F;
+    /* padding-left: 10px; */
+    font-size: 14px;
+}
+
+
+/* main-sec starts here.... */
+
+#Home_main {
+    width: 1040px;
+    height: 680px;
+    margin-left: 20px;
+  
+}
+
+#our_hotels_sec {
+    height: 360px;
+}
+
+#our_hotels_h3 {
+    margin-bottom: 10px;
+}
+
+#our_hotels_div {
+    display: flex;
+    width: 1170px;
+    height: 300px;
+
+}
+
+/*                        home   SLider CSS                      */
+
+#swiper_up {
+    width: 1160px;
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+   
+    height: 280px;
+}
+
+#swiper-wrapper_up {
+    right: 430px;
+    width: 250px;
+}
+.homeslides{
+    margin-right: 20px;
+}
+.next_prev_btn_up_div {
+    position: relative;
+
+}
+
+#swiper-button-prev_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+
+
+/* swiper down  */
+#swiper_down {
+    width: 1170px !important;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+.home_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+
+#swiper-wrapper_down {
+    right: 440px;
+}
+
+.next_prev_btn_down_div {
+    position: relative;
+}
+
+#swiper-button-prev_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1173px;
+        --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+
+
+
+
+
+.hotel_contents_div {
+    width: 220px;
+    height: 270px;
+    padding-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+}
+
+.hotel_imgs {
+    width: 210px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.rating_div {
+    display: flex;
+    width: 37px;
+    height: 20px;
+    padding: 1px 2px 0px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17px;
+    left: 157px;
+    background-color: #ffffff;
+}
+
+.fa-star:before {
+    font-size: smaller;
+}
+
+.checked {
+    color: #FFBF00;
+}
+
+.rating_span {
+    font-weight: 600;
+    padding-top: 2px;
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+.hotel_name {
+    color: #FF5F1F;
+    text-overflow: ellipsis;
+    width: 190px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.fa-user:before {
+    color: #FF5F1F;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.profile_num {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hotel_price {
+
+    width: 70px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+    position: relative;
+    top: 10px;
+}
+
+#hotel_btn {
+    background-color: white;
+    color:  #ff5c02;
+    border: solid 1px #ff5c02;
+    padding-left: 12px;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    margin-top: 12px;
+ float: inline-end;
+    cursor: pointer;
+}
+#hotel_btn:hover{
+
+    background-color: #ff5c02 !important;
+    color: white !important;
+}
+
+.hotel_btn {
+    background-color: white;
+    color: #ff5c02;
+    border: solid 2px #ff5c02;
+    padding-left: 12px;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+/* home Top Visited sec  */
+
+#home_top_rated_sec {
+    height: 300px;
+}
+
+#home_top_rated_divs {
+
+    display: flex;
+    width: 1170px;
+    height: 300px;
+
+}
+
+#home_top_rated_div {
+
+    width: 170px;
+    height: 230px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+    padding: 5px 0px 5px 0px;
+
+}
+
+.home_top_img1 {
+    width: 150px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+
+}
+
+.top_visited_rating_div {
+    display: flex;
+    width: 30px;
+    height: 19px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17px;
+    left: 115px;
+    background-color: #ffffff;
+}
+
+#icon.fa.fa-star:before {
+    font-size: 10px;
+}
+
+.top_visited_rating_span {
+    font-weight: 600;
+    padding-left: 3px;
+    font-size: 11px;
+    padding-top: 4px;
+}
+
+.top_visited_hotel_name {
+    color: #FF5F1F;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.destination-image {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.price_book_holes_in_small{
+    display: flex;
+    width: 170px;
+    height: 40px;
+}
+.hotel_price_in_small{
+    width: 70px;
+    margin-left: 10px;
+}
+.small_hotel_book_btn{
+    background-color: white;
+    color: #ff5c02;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-right: 6px;
+    margin-top: 12px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.small_hotel_name{
+    text-align: center;
+}
+
+#top_visited_btn {
+    height: 20px;
+    background-color: white;
+    color: #ff5c02;
+    border: solid 1px #ff5c02;
+    width: 153.481482px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#top_visited_btn:hover{
+    background-color: #ff5c02;
+    color: white;
+}
+
+.top_visited_btn {
+    height: 20px;
+    background-color: white;
+    color: #ff5c02;
+    border: solid 2px #ff5c02;
+    ;
+    width: 153.481482px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* HotelBooking main css starts here */
+
+#HotelBooking_main {
+    width: 970px;
+    height: 900px;
+    margin-left: 20px;
+  
+}
+
+#hotelBooking_book_hotel_sec {
+    width: 970px;
+    height: 461px;
+
+}
+
+/* auto slide css */
+.slider {
+    width: 1328px;
+    height: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+   
+    display: grid;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    width: 500px;
+    height: 250px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    perspective: 100px;
+
+}
+
+.slider-track {
+    display: flex;
+    width: calc(240px * 6);
+    /* animation: scroll 40s linear infinite; */
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+
+.slide_imgs {
+    width: 340px;
+    margin: 5px;
+    margin-right: 25px;
+    border-radius: 10px;
+    transition: transform 1s;
+
+
+}
+
+.slide_imgs:hover {
+    /* transform: translateZ(10px) */
+    transform: scale(1.3);
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 5));    
+    }
+}
+
+#Book_hotel_name {
+    display: inline-block;
+    /* width: 420px; */
+    font-size: 40px;
+    color: #ff5c02;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-style: italic;
+}
+#Hotel_type_hotelbkg{
+    color: #000;
+    font-size: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: solid;
+    border-left: solid;
+}
+
+#Hotel_type_hotelbkgin_popup{
+
+    color: #000;
+    font-size: 15px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border-right: solid;
+    border-left: solid; */
+
+}
+#Book_hotel_price {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    /* float: inline-end; */
+}
+
+#Book_hotel_facilities {
+    display: flex;
+    width: 1170px;
+    height: 90px;
+}
+
+#Book_hotel_faci-child {
+    display: flex;
+  
+    height: 95px;
+    margin-left: 40px;
+}
+
+.facilities_div {
+    width: 200px;
+    height: 70px;
+    margin-right: 30px;
+
+}
+
+.fac_img2 {
+    width: 20px;
+    margin-top: 15px;
+}
+
+.facilities_names {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    margin-left: 5px;
+}
+
+.fac_img1 {
+    width: 20px;
+}
+
+#hotelBooking_book_now_btn {
+    background-color: white;
+    color: #ff5c02;
+    border: solid 2px #ff5c02;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 140px;
+    cursor: pointer;
+
+}
+
+#hotelBooking_book_now_btn:hover {
+    background-color: #ff5c02;
+    color: #fff;
+    cursor: pointer;
+}
+
+.HotelBooking_popup {
+    display: none;
+    position: relative;
+}
+.hotelsave_rate{
+    
+    font-size: xx-large;
+    float: inline-end;
+}
+
+.error_msg_inHome{
+    display: none;
+    color: red;
+    font-weight: 600;
+}
+#hotel_save_eror{
+    
+    margin-top: 0px;
+}
+.HotelBooking_popup_div {
+
+    width: 410px;
+    height: 530px;
+    position: absolute;
+    border-radius: 10px;
+    top: -395px;
+    right: -12px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+}
+
+.fisrt_sec_popup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup_hotelbooking_h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.popup_bookingConfirmation_h3 {
+    margin-left: 20px;
+}
+.hotelprice_popup{
+    /* margin-left: 115px !important; */
+    float: inline-end;
+}
+.close_icon {
+    width: 36px;
+    height: 27px;
+    margin-top: 17px;
+    margin-right: -3px;
+    cursor: pointer;
+    position: relative;
+    left: -14px;
+}
+
+.popup_hotel_imgs {
+    width: 174px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#popup_hotelbuid_img1 {
+    margin-top: 8px;
+    margin-left: 110px;
+}
+
+.popup_hotel_name {
+    color: #ff5c02;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.popup::before {
+    color: #FF5F1F;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.popup_profile_num {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+.hotel_type{
+    margin-left: 92px;
+    color: #FF5F1F;
+    font-size: large;
+}
+.popup_des_img {
+    position: relative;
+    width: 36px;
+    top: 8px;
+    height: 23px;
+    margin-left: 15px;
+}
+
+.popup_km {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.booking_ins {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.hotelbooking_ol {
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.li {
+    font-size: 12px;
+    line-height: 1.7;
+    
+}
+
+.total_fare {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.total_price {
+    font-size: 30px;
+    font-weight: 600;
+    float: inline-end;
+}
+
+.popup_bookhotel_btn {
+    width: 340px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 35px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* hotel save */
+
+#hotelsavediv{
+
+    width: 410px;
+    height: 400px;
+    position: absolute;
+    border-radius: 10px;
+    top: -300px;
+    right: -12px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+#hotelsave_form{
+    width: 350px;
+    height: 210px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.inputs_hotelsave{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px #ff5c02;
+    border-radius: 5px;
+    color: #ff5c02;
+    height: 15px;
+    margin-top: 15px;
+}
+#hotelsave_bookbtn{
+    width: 340px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    /* margin-left: 35px; */
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lastinputsave{
+    margin-bottom: 25px;
+}
+/* .hotelsaveflare{
+    position: relative;
+    height: 40px;
+} */
+/* hotel confirmation CSS */
+.HotelConfirmation_popup_div {
+    padding: 10px;
+    width: 410px;
+    height: 577px;
+    position: absolute;
+    border-radius: 10px;
+    top: -395px;
+    right: -12px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.popup_Confirmation_h3 {
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.booking_sucessfull_img {
+    width: 120px;
+    margin-left: 170px;
+    margin-top: 75px;
+}
+
+.sucessful_msg {
+    text-align: center;
+    color: #00b11a;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 52px;
+}
+
+.Agent_msg {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sucessful_ins {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.sucessful_ol {
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.hotelsaveconfdetailsdiv{
+    margin-top: 30px !important;
+}
+.details_div {
+    display: flex;
+    width: 380px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+.prof_div {
+    display: flex;
+    width: 250px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 55px;
+}
+
+.profile_img {
+    width: 60px;
+}
+
+.prof_name {
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.prof_no {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.prof_details_div {
+    padding-top: 10px;
+}
+
+.whats_msg_div {
+    width: 150px;
+    padding-top: 18px;
+    padding-left: 30px;
+}
+
+.whats_msg_imgs {
+    width: 43px;
+}
+
+
+/*        Hotel Booking top rated section csss              */
+
+
+
+
+
+
+#hotelBooking_TopRated_hotel_sec {
+    width: 970px;
+    height: 400px;
+}
+
+#hotelBooking_TopRated_hotel_divs {
+    display: flex;
+    width: 1170px;
+    height: 350px;
+    padding: 10px;
+}
+#prev_down_hotelBooking{
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+.hotelBooking_TopRated_hotel_div {
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.HoteBooking_toprated_rating_div {
+    display: flex;
+    width: 30px;
+    height: 19px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17px;
+    left: 140px;
+    background-color: #ffffff;
+}
+
+.hotelBkg_topRated_imgs {
+    width: 180px;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.hotelBkg_toprated_hotel_price {
+
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+/*                           HotelBooking Slider          */
+#swiper_up_hotelbooking {
+    width: 1170px !important;
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+   
+    height: 280px;
+}
+
+#swiper-wrapper_up_hotelbooking {
+    right: 430px;
+    width: 250px;
+}
+.homeslides{
+    margin-right: 20px;
+}
+.next_prev_btn_up_div_hotelbooking {
+    position: relative;
+
+}
+
+#swiper-button-prev_up_hotelbooking {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_up_hotelbooking {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+
+/*                PUJA Booking CSS                      */
+
+#Puja_booking_main {
+  
+    width: 1040px;
+    height: 700px;
+    position: relative;
+    margin-left: 20px;
+ 
+
+}
+
+#Traditionalpujas_sec {
+    height: 360px;
+}
+
+.Traditional_Pujas_divs {
+    display: flex;
+    width: 1170px;
+    height: 300px;
+}
+
+.Traditional_Pujas_div {
+    width: 220px;
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+}
+
+.Traditional_Pujas_imgs {
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.puja_name {
+    color: #FF5F1F;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.Location_pujaname_div {
+    display: flex;
+
+}
+
+.Traditional_location_img {
+    width: 26px;
+    margin-left: 6px;
+}
+
+.Temple_name {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#first_puja_price {
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.puja_price {
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.puja_booknow_btn {
+    background-color: white;
+    color: #ff5c02;
+    border: solid 2px #ff5c02;
+    padding-left: 12px;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+.puja_booknow_btn:hover {
+
+    background-color: #ff5c02;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* puja swiper up  */
+
+#swiper_puja_up {
+
+    width: 1170px !important;
+    left: 38px;
+  
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+    margin-left: 15px !important;
+}
+
+#swiper-wrapper_puja_up {
+    right: 400px;
+}
+
+.next_prev_btn_puja_up_div {
+    position: relative;
+
+}
+.puja_slides_up{
+    width: 250px !important;
+    margin-right: 15px !important;
+}
+#swiper-button-prev_puja_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_puja_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/* puja swiper down */
+
+#swiper_puja_down {
+    width: 1170px !important;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_puja_down {
+    right: 380px;
+}
+
+.next_prev_btn_puja_down_div {
+    position: relative;
+}
+
+#swiper-button-prev_puja_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_puja_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+.ujjainFamous_puja{
+    width: 200px !important;
+}
+
+.Ujjain_FamousPujas_divs {
+    display: flex;
+    width: 1170px;
+    height: 300px;
+}
+
+.Ujjain_FamousPujas_div {
+    width: 170px;
+    height: 230px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+    padding: 5px 0px 5px 0px;
+}
+
+.Ujjain_FamousPujas_imgs {
+    width: 150px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.Famous_puja_name {
+    color: #ff5c02;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.Famous_Location_pujaname_div {
+    display: flex;
+}
+
+.Famous_location_img {
+    width: 20px;
+    height: 23px;
+    margin-left: 6px;
+}
+
+.Famous_Temple_name {
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #ff5c02;
+}
+
+.Famous_puja_price {
+
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.Famous_puja_booknow_btn {
+    background-color: white;
+    color:  #ff5c02;
+    border: solid 1px #ff5c02;
+    margin-left: 22px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.Famous_puja_booknow_btn:hover{
+
+    background-color: #ff5c02;
+    color: #ffffff;
+}
+
+
+#Ujjain_FamousPujas_sec {
+    height: 300px;
+}
+
+/* pujaPackageBooking_pop up css */
+
+#pujaPackageBooking_popupdiv {
+    width: 410px;
+    height: 552px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+
+}
+
+.popup_pujapackage_name {
+    color: #ff5c02;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.puja_package_divs {
+    display: flex;
+    margin-bottom: 7px;
+    width: 375px;
+    height: 62px;
+    margin-left: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.Package_imgs {
+    width: 64px;
+    height: 48px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.pujaNames {
+    color: #ff5c02;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.Package_location_img {
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+
+}
+
+.Package_templeName {
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 12px;
+}
+
+.id:before {
+    color: #FF5F1F;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 11px;
+    display: block;
+}
+
+.Package_profile_num {
+    display: block;
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.Package_pricenum {
+    display: block;
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.Package_pricenum::first-letter {
+    color: #ff5c02;
+    font-weight: bold;
+}
+
+.Package_delete_icon {
+    height: 21px;
+    width: 32px;
+    margin-left: 37px;
+    margin-top: 20px;
+}
+
+.Package_totalprice {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 174px;
+}
+
+
+
+
+
+
+/* puja popup css */
+
+#PujaBooking_popup{
+    position: relative;
+}
+
+#PujaBooking_popup_div {
+    width: 410px;
+    height: 540px;
+    position: absolute;
+    top: -350px;
+    right: 100px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.popup_pujabooking_h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    font-weight: bold;
+}
+.pujabooking_imgs {
+    width: 174px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.popup_pujabooking_name {
+    color: #ff5c02;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.pujabkg_popup_profilenum {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.popup_puja_location_img {
+    width: 15px;
+    margin-left: 6px
+}
+
+#pujapopup_temple_name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.popup_needful_things {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 0px
+}
+
+.pujapopup_ol {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.pujapoup_li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.pujapoup_total_price {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 190px;
+}
+
+.popup_bookpuja_btn {
+    width: 340px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 35px;
+    margin-top: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Confirmation Puja popup */
+
+#PujaConfirmation_popup_div {
+    width: 410px;
+    height: 578px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+
+
+/*                      UjjainDarshan_main css                 */
+
+#UjjainDarshan_main {
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+}
+
+.top-visited-places-sec {
+    height: 360px;
+}
+
+.nearby-visiting-places-sec {
+    height: 300px;
+}
+
+.top-visited-places-div {
+    display: flex;
+    width: 1170px;
+    height: 300px;
+}
+
+.top_visited_contents_div {
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+
+}
+
+.ujjain-dharshan_imgs {
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.ujjain_place_name {
+    color: #FF5F1F;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.ujjainprice{
+    margin-left: 75px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.destinatio_km_div {
+    display: flex;
+    margin-left: 5px;
+}
+
+.ujjain_desti_img {
+    width: 25px;
+
+}
+
+.ujjain_km {
+    font-weight: bold;
+    margin-left: 1px;
+    margin-top: 2px;
+}
+
+.Topvisited_ujjain_btn {
+    background-color: white;
+    border: solid 2px #FF5F1F;
+    color: #FF5F1F;
+    width: 175px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.Topvisited_ujjain_btn:hover {
+    background-color: #ff5c02 !important;
+    color: #fff !important;
+}
+
+
+/*   ujjain slider up   */
+
+
+#swiper_ujjain_up {
+    width: 1170px !important;
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_ujjain_up {
+    right: 440px;
+}
+
+.next_prev_btn_ujjain_up_div {
+    position: relative;
+
+}
+
+#swiper-button-prev_ujjain_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_ujjain_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+.ujjain_swiperslides{
+    width: 215px !important;
+    margin-right: 55px !important;
+}
+
+/* ujjain swiper down */
+
+#swiper_ujjain_down {
+    width: 1170px !important;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_ujjain_down {
+    right: 440px;
+}
+.ujjan_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+.next_prev_btn_ujjain_down_div {
+    position: relative;
+}
+
+#swiper-button-prev_ujjain_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_ujjain_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/*          ujjain popup    */
+
+#ujjain_popupdiv {
+    width: 420px;
+    height: 560px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-right: 20px;
+}
+
+.ujjain_delete_icon {
+    height: 21px;
+    width: 32px;
+    margin-left: 120px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#ujjain_ins {
+    margin-top: 150px;
+}
+#ins_div_content{
+    position: relative;
+   
+}
+.pujamsg{
+    line-height: 20px;
+}
+.popup_puja_btn{
+    width: 382px;
+    height: 41px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.popup_ujjain_btn{
+    width: 410px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ujjainconfirmsg{
+    line-height: 20px;
+}
+#ujjainConfirmation_popupdiv {
+    width: 420px;
+    height: 585px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+
+/*                               Omkareshwar_main CSS                             */
+
+#Omkareshwar_main {
+   
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+   
+}
+
+.Topvisited_omkar_btn {
+    background-color: white;
+    border: solid 2px #FF5F1F;
+    color: #FF5F1F;
+    width: 175px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.Topvisited_omkar_btn:hover {
+    background-color: #ff5c02;
+    color: #fff;
+}
+
+
+/*   omkar slider up   */
+
+
+#swiper_omkar_up {
+    width: 1170px !important;
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_omkar_up {
+    right: 440px;
+}
+
+.next_prev_btn_omkar_up_div {
+    position: relative;
+
+}
+
+#swiper-button-prev_omkar_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_omkar_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/* omkar swiper down */
+
+#swiper_omkar_down {
+    width: 1170px !important;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_omkar_down {
+    right: 440px;
+}
+
+.next_prev_btn_omkar_down_div {
+    position: relative;
+}
+.omkar_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+#swiper-button-prev_omkar_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_omkar_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/*            omkar popup css             */
+
+#omkar_popupdiv {
+    width: 420px;
+    height: 570px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-right: 20px;
+}
+.popup_omkar_btn{
+    width: 412px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.omkarpujaNames {
+    color: #ff5c02;
+    font-weight: bold;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#omkar_ins {
+    margin-top: 25px;
+}
+#omkar_guides_packages_divs{
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 20px;
+}
+
+#omkar_guides_packages_divs::-webkit-scrollbar{    display: none;  }
+.dis_price_div{
+    display: flex;
+    width: 151px;
+}
+.omkarpackagediv{
+    height: 62px;
+    width: 350px;
+}
+
+.omkar_delete_icon{
+    height: 21px;
+    width: 32px;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+#omkarConfirmation_popupdiv {
+    width: 420px;
+    height: 568px;
+    padding-right: 10px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/*                MaaBaglamukhi  Main CSS     */
+
+#MaaBaglamukhi_main {
+ 
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+   
+}
+
+.Topvisited_maabag_btn {
+    background-color: white;
+    border: solid 2px #FF5F1F;
+    color: #FF5F1F;
+    width: 175px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.Topvisited_maabag_btn:hover {
+    background-color: #ff5c02;
+    color: #fff;
+}
+
+
+/*   Maa Baglamukhi Tour slider up   */
+
+
+#swiper_maabag_up {
+    width: 1170px !important;
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_maabag_up {
+    right: 440px;
+}
+
+.next_prev_btn_maabag_up_div {
+    position: relative;
+
+}
+
+#swiper-button-prev_maabag_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -1170px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_maabag_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/* Maa Baglamukhi Tour swiper down */
+
+#swiper_maabag_down {
+    width: 1170px !important;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_maabag_down {
+    right: 440px;
+}
+
+.next_prev_btn_maabag_down_div {
+    position: relative;
+}
+.maabag_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+#swiper-button-prev_maabag_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_maabag_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/*       Maa Baglamukhi Tour Popup            */
+
+#maabag_popupdiv {
+    width: 420px;
+    height: 570px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-right: 20px;
+}
+.popup_mabagla_btn{
+    width: 411px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 31px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.maabagpujaNames {
+    color: #ff5c02;
+    font-weight: bold;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#maabagla_guides_packages_divs{
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 20px;
+}
+
+#maabagla_guides_packages_divs::-webkit-scrollbar{    display: none;  }
+.maabaglapackagediv{
+    height: 62px;
+    width: 350px;
+}
+
+.maabagla_deleteicon{
+    height: 21px;
+    width: 32px;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+#maabag_ins {
+    margin-top: 25px;
+}
+
+#maabagConfirmation_popupdiv {
+    width: 420px;
+    height: 568px;
+    position: absolute;
+    top: -300px;
+    right: -80px;
+    padding-right: 10px;
+    z-index: 5;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/*                       Taxi services css starts from here ...........    */
+
+#TaxiServices_main{
+
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+    
+}
+#Taxi_top-visited-places-sec{
+    height: 360px;
+}
+#Taxi_nearby-visiting-places-sec{
+    height: 300px;
+}
+#Taxi_top-visited-places-div{
+    display: flex;
+    width: 970px;
+    height: 300px;
+}
+
+
+/*   Taxi slider up   */
+
+
+#swiper_taxi_up {
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_taxi_up {
+    right: 375px;
+}
+
+.next_prev_btn_taxi_up_div {
+    position: relative;
+
+}
+
+#swiper-button-prev_taxi_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -982px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_taxi_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/* Taxi swiper down */
+
+#swiper_taxi_down {
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_taxi_down {
+    right: 440px;
+}
+.taxi_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+.next_prev_btn_taxi_down_div{
+    position: relative;
+}
+
+#swiper-button-prev_taxi_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_taxi_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#taxi_popupdiv {
+    width: 420px;
+    height: 585px;
+    position: absolute;
+    padding-bottom: 12px;
+    top: -315px;
+    right: -8px;
+    z-index: 15;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.popup_taxi_btn{
+    width: 370px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.taxi_inputs_div{
+    margin-left: 25px;
+    width: 380px;
+    height: 130px;
+    margin-top: 20px;
+    position: relative;
+}
+.taxi_Sinputs{
+    width: 345px;
+    padding-left: 5px !important;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 0px;
+    color: #ff5c02;
+    
+}
+.taxi_Sinputs::placeholder{
+    color: #fbcaaf;
+    padding-left: 10px;
+    font-size: 10px;
+
+}
+.taxicancel_img{
+    position: relative;
+    left: -16px;
+}
+.airportfinput{
+    padding-left: 30px;
+    font-weight: 600;
+    width: 320px;
+}
+.airportsearchicon{
+    width: 20px;
+    position: absolute;
+    right: 65px;
+    top: 73px;
+}
+.taxi_location_icon{
+    width: 20px;
+    position: absolute;
+    right: 46px;
+    top: 12px;
+}
+.taxi_search_icon{
+    width: 20px;
+    position: absolute;
+    right: 45px;
+    top: 81px;
+}
+.taxiins{
+    margin-top: 158px;
+    margin-left: 0px;
+}
+.taxiflare{
+    margin-left: 0px;
+}
+.taxi_ol{
+   
+        padding-left: 0px;
+        margin-left: 15px;
+}
+#taxi_confirmation_popup_div{
+    width: 430px;
+    height: 600px;
+    position: absolute;
+    top: -315px;
+    right: -8px;
+    z-index: 15;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.taxiconfirmsucimg{
+    margin-left: 137px;
+    margin-top: 150px;
+}
+.taxiconfirmsucmsg{
+    margin-left: 15px;
+    margin-top: 11px;
+    margin-bottom: 30px;
+}
+.aimg {
+    margin-left: 3px;
+    margin-top: -13px;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+.taxiconfir_h3{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.taxiconfirmdd{
+    height: 115px;
+    display: block;
+    margin-bottom: 18px;
+    margin-left: 25px;
+}
+.taxiconfirmprofdiv{
+    width: 356px;
+}
+.whats_msg_imgs_taxi{
+    margin-left: 100px;
+    width: 45px;
+    height: 40px;
+}
+.pr_icon{
+    width: 25px;
+}
+.ru_icon{
+    width: 15px;
+}
+.taxi_whats_msg_imgs{
+    width: 45px;
+    height: 37px;
+    margin-left: 25px;
+}
+
+.divs_pr_ru{
+    height: 38px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*                     Airport Rides css starts from here ...........   */
+
+
+#AirportRides_main{
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+
+}
+#Airport_top-visited-places-sec{
+    height: 360px;
+}
+#Airport_nearby-visiting-places-sec{
+    height: 300px;
+}
+#Airport_top-visited-places-div{
+    display: flex;
+    width: 970px;
+    height: 300px;
+}
+.airportol{
+    padding-left: 0px;
+    margin-left: 15px;
+}
+.airportins{
+    margin-top: 157px;
+    margin-left: -7px;
+    font-size: 15px;
+    /* font-weight: 800; */
+}
+.airportli{
+    font-size: 12px;
+    line-height: 1.7;
+    /* margin-top: 5px; */
+    margin-left: -35px;
+}
+.airfare{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: -10px;
+    font-weight: bold;
+}
+.airpri {
+    margin-left: 181px;
+    font-weight: bold;
+    font-size: 30px;
+    float: none;
+}
+.bookairportbtn{
+    width: 340px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: -10px;
+    margin-top: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.airco {
+    margin-left: 320px;
+    position: absolute;
+}
+#Airport_popupdiv {
+     width: 370px;
+    height: 583px;
+    position: absolute;
+    top: -315px;
+    right: -198px;
+    z-index: 15;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+.airportfinput {
+    padding-left: 30px;
+    font-weight: 600;
+    width: 319px;
+    height: 23px;
+    margin-left: -9px;
+}
+.airportlocationicon{
+    width: 20px;
+    position: absolute;
+    right: 70px;
+    top: 10px;
+}
+.airco1 {
+    margin-left: 330px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Airport_confirmation_popup_div{
+    width: 380px;
+    height: 600px;
+    position: absolute;
+    top: -315px;
+    right: -185px;
+    z-index: 15;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.popup_airport_btn{
+    width: 375px;
+    height: 40px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*   Airport slider up   */
+
+
+#swiper_airport_up {
+    left: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_airport_up {
+    right: 375px;
+}
+
+.next_prev_btn_airport_up_div {
+    position: relative;
+
+}   
+.airport_slides_down{
+    width: 180px !important;
+    margin-right: 25px !important;
+    height: 243px !important;
+}
+#swiper-button-prev_airport_up {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 132px;
+    left: -982px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_airport_up {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -74px;
+    top: 132px;
+    --swiper-navigation-size: 18px;
+    --swiper-theme-color: #ff5c02;
+}
+
+/* Taxi swiper down */
+
+#swiper_airport_down {
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_airport_down {
+    right: 440px;
+}
+
+.next_prev_btn_airport_down_div {
+    position: relative;
+}
+
+#swiper-button-prev_airport_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1180px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_airport_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+/*                           About  Ujjain_main   Css                         */
+
+#AboutUjjain_main{
+
+    width: 1040px;
+    height: 640px;
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+#About_shopping{
+    height: 360px;
+}
+#about_shopping_divs{
+    display: flex;
+    width: 1170px;
+    height: 375px;
+}
+
+
+
+/* Shopping swiper down */
+
+
+.shopping_slides {
+    width: 300px !important;
+    margin-right: 0px !important;
+}
+
+#swiper_shopping_down {
+    width: 1170px !important;
+    left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_shopping_down {
+    right: 390px;
+}
+
+.next_prev_btn_shopping_down_div {
+    position: relative;
+}
+#swiper-button-prev_shopping_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1160px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_shopping_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -87px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+#shopping_popup{
+    position: relative;
+}
+.shoppingdivs_contents{
+    height: 272px;
+    width: 230px;
+    top: -7px;
+    padding: 14px;
+    border-radius: 15px;
+    margin-left: -11px;
+}
+.shopimg{
+    margin-top: 6px;
+    width: 233px;
+    height: 181px;
+    border-radius: 10px;
+}
+.shopbtn{
+    margin-left: 0px;
+    background-color: white;
+    color: #ff5c02;
+    border: solid 1px #ff5c02;
+    margin-left: 22px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    width: 92px;
+    height: 35px;
+    border-width: 2.3px;
+}
+.shopprice{
+    display: inline-block;
+    width: 84px;
+}
+
+/*   gallery css   */
+
+.galleryimg{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.gallerydivs_contents{
+    height: 240px;
+    width: 185px;
+    padding-left: 5px;
+}
+#About_gallery{
+    height: 300px;
+}
+#about_gallery_divs{
+    display: flex;
+    width: 1170px;
+    height: 300px;
+}
+
+
+
+/* gallery swiper down */
+
+
+#swiper_gallery_down {
+    left: -8px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    padding: 10px;
+}
+
+#swiper-wrapper_gallery_down {
+    right: 465px;
+}
+
+.next_prev_btn_gallery_down_div {
+    position: relative;
+}
+#swiper-button-prev_gallery_down {
+    display: none;
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 9px 15px 17px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: -1170px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+#swiper-button-next_gallery_down {
+    border: solid 2px #ff5c02;
+    background-color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: absolute;
+    right: -55px;
+    top: 100px;
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ff5c02;
+}
+
+
+
+#testdiv{
+        display: flex;
+    width: 1060px;
+    height: 250px;
+}
+.testdivs_chids{
+    width: 485px;
+    height: 250px;
+    margin: 0px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+.Testimonials_txt{
+    width: 390px;
+    font-style: italic;
+    font-size: 12px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: normal;
+    z-index: 5;
+    position: relative;
+}
+.Testimonials_names{
+    font-size: 13px;
+    color: #ff5c02;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.testi_location{
+    color: #959595;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 4px;
+}
+.quotationimg{
+    width: 90px;
+    position: absolute;
+    top: 167px;
+    right: 1px;
+}
+.quotationimg2{
+    width: 90px;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    z-index: 1;
+}
+
+
+/*  Shopping css */
+
+
+#shopping_main{
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+}
+
+#about_ujjain_logo{
+
+    width: 450px;
+    margin-left: 370px;
+    margin-top: 35px;
+}
+
+/*------------------------- shoppingPackageBooking_pop up css --------------------*/
+ 
+#shopPackageBooking_popupdiv {
+    width: 366px;
+    
+    position: absolute;
+    top: -381px;
+    right: -240px;
+    z-index: 12;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+ 
+}
+ .shopprice{
+    font-size: 27px;
+    width: 101px;
+ }
+.popup_shopping_name {
+    color: #ff5c02;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+.shopping_name{
+    font-size: 19px;
+}
+.shopping_package_divs {
+    display: flex;
+    margin-bottom: 7px;
+    width: 355px;
+    height: 62px;
+    margin-left: 6px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+ 
+.shoppingPackage_imgs {
+    width: 64px;
+    height: 48px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+ 
+.shoppingNames {
+    color: #ff5c02;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+ 
+.shoppingPackage_location_img {
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+ 
+ 
+}
+.shop_ins{
+    margin-top: 195px;
+    font-size: 15px;
+}
+.shpri{
+    font-size: 30px;
+    font-weight: 600;
+    /* float: inline-end; */
+    margin-left: 262px;
+    margin-top: -24px;
+    position: absolute;
+}
+.shopitems1 {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-bottom: 5px;
+}
+.shopfare1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 11px;
+    margin-top: -17px;
+    padding-bottom: 20px;
+    position: absolute;
+}
+.shop_ol{
+    margin-left: -8px;
+}
+ 
+.shoppingPackage_templeName {
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 12px;
+}
+ 
+.id:before {
+    color: #FF5F1F;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 11px;
+    display: block;
+}
+ 
+.shoppingPackage_profile_num {
+    display: block;
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: 14px;
+}
+ 
+.shoppingPackage_pricenum {
+    display: block;
+    margin-top: 22px;
+    margin-left: 119px;
+    font-size: 14px;
+    font-weight: 800;
+}
+ 
+.Package_pricenum::first-letter {
+    color: #ff5c02;
+    font-weight: bold;
+}
+.shoppingPackage_pricenum::first-letter{
+    color: #ff5c02 !important;
+    font-weight: bold;
+}
+.shoppingPackage_delete_icon {
+    height: 21px;
+    width: 32px;
+    margin-left: 37px;
+    margin-top: 20px;
+}
+ 
+.shoppingPackage_totalprice {
+    font-size: 30px;
+    font-weight: 600;
+    float: inline-end;
+ 
+}
+ 
+#shopping_main{
+   
+    width: 1040px;
+    height: 700px;
+    margin-left: 20px;
+}
+ 
+ 
+/* --------------------------  shopping popup confirmation ----------------------*/
+ 
+#shoppingConfirmation_popup_div{
+    width: 372px;
+    height: px;
+    position: absolute;
+    top: -381px;
+    right: -240px;
+    z-index: 12;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-right: 20px;
+   
+
+
+   
+}
+.shopconf{
+    margin-left: 21px;
+}
+.shopsucces_img{
+    margin-top: 30px;
+    margin-left: 140px;
+}
+.shopping_done_btn {
+    width: 362px;
+    height: 43px;
+    border-radius: 10px;
+    border: hidden;
+    position: relative;
+    bottom: 3px;
+    margin-left: 12px;
+    background-color: #ff5c02;
+    color: white;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+
+
+    margin-bottom: 10px;
+    margin-top: 5px;
+    top: 0px;
+}
+ 
+.total-items01 {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    left: 15px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.conting-numbers01 {
+    position: relative;
+    left: 252px;
+ 
+}
+.shpcou1{
+    margin-left: 17px;
+    margin-top: -8px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+.shopitems2{
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    margin-left: 14px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -8px;
+    padding-bottom: 5px;
+}
+.shopol{
+    padding-left: 31px;
+}
+.total-fare01 {
+    position: relative;
+    bottom: 8px;
+}
+ 
+.shoppingfisrt_sec_popup {
+    display: flex;
+}
+ 
+.shoppingclose_icon {
+    height: 34px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+.popup_shopping_h3 {
+    position: relative;
+    left: 5px;
+    font-size: 16px;
+    font-weight: 800;
+}
+ 
+.shopping_bookhotel_btn {
+    width: 350px;
+    height: 50px;
+    border: solid 1px #FF5F1F;
+    background-color: #ff5c02;
+    color: #fff;
+    margin-left: 12px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+ 
+}
+.total-fare-amount01 {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+ 
+.counting-box01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 60px;
+    font-size: 19px;
+    border: solid 1px #ff5c02;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+.quatity-line01 {
+    display: flex;
+}
+.qty {
+    position: relative;
+    bottom: 12px;
+    left: 8px;
+}
+ 
+/* .counting-box01
+span {
+    width: 100%;
+    text-align: center;
+} */
+.minus {
+    font-size: 19px;
+    height: 20px;
+    width: 20px;
+    background-color: #FF5F1F;
+    color: white;
+   
+}
+ 
+.num {
+    font-size: 19px;
+}  
+.plus {
+    background-color: #ff5c02;
+    color: white;
+}
+.minus-container {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hidden;
+    border-radius: 3px;
+    background-color: #ff5c02;
+    color: white;
+    cursor: pointer;
+}
+ 
+.num-container {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hidden;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+}
+ 
+.plus-container {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hidden;
+    border-radius: 3px;
+    background-color: #ff5c02;
+    color: white;
+    cursor: pointer;
+}
+ 
+
+
+/* shopping down css */
+
+
+.shopping-price{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    display: flex;
+ 
+}
+ 
+.shopping-down-btn{
+    width: 70px;
+    height: 26px;
+    margin-top: -25px;
+    margin-left: 90px;
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff5c02;
+    background-color: white;
+    border: solid 1px #ff5c02;
+    border-radius: 4px;
+    border-width: 2.2px;
+    text-align: center;
+    border-width: 2.2px;
+}
+.shopping-down-btn:hover{
+ 
+    background-color: #ff5c02;
+    color: #ffffff;
+}
+
+
+
+.ourhistory {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.history-container {
+    width: 1180px;
+    height: 180px;
+    margin: 10px 5px;
+    padding: 30px 30px 26px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+.history-text {
+    width: auto;
+    font-size: 12px;
+    margin-top: -5px;
+    line-height: 1.5em;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.aboutgallery{
+    height: 200px;
+    width: 193px;
+}
+.abtimg{
+    width: 180px;
+    height: 166px;
+    object-fit: cover;
+    margin-bottom: 2px;
+    margin-left: 4px;
+}
+.abtlocimg{
+    width: 16px;
+    height: 16px;
+    margin-left: 1px;
+    position: relative;
+    top: 3px;
+}
+.nameabout{
+    color: #000;
+}

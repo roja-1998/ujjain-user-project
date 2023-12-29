@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/PNG" href="./Images/logo_ujjain.PNG">
+    <link rel="stylesheet" href="../CSS/Ujjain home.css">
+    <!-- <script src="./CSS/Aventi.ttf"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ujjain Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../JavaScript/ConstVariables.js"></script>
+    <script src="../JavaScript/indexHome.js"></script>
+   
+</head>
+
+<body>
+    <!--          Navbar section                                  -->
+    <nav id="Dashboard-nav">
+        <div id="Dashsun">
+            <span class="nav-sun"> Mon 18 Dec</span> <br>
+            <span class="nav-sun1"> <span id="datetime"></span> </span>
+        </div>
+        <div id="Dashbhanu">
+            <a class="ViewProfilepage_Atag" href="../Profile/ ">
+                <div id="viewprofile_div" onclick="">
+                    <p class="nav-sun" id="Login_User_Name">chaithanya </p>
+                    <p class="nav-sun view_txt_sun" id="viewprofile">View profile > </p>
+                </div>
+            </a>
+            <img id="dashboardprofilelogo" src="../Images/profile logo.PNG" alt="">
+
+            <!-- <a href="Login.html">
+                <img id="logouticon" onclick="Logout()" src="./Images/logouticon.png" alt="" srcset="">
+            </a> -->
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    <!-- aside and main tags parent-section -->
+    <section id="aside_main_parentsection">
+        <!-- aside section starts here......-->
+
+        <aside id="sidebar">
+            <img id="ujjain-logo" src="../Images/ujjain-darshan.png" alt="">
+            <a href="../Home/">
+                <div id="home-div" class="ColorAside_divs" onclick="Home()">Home </div>
+            </a>
+            <a href="../HotelBooking/">
+                <div id="hotel-div" class="aside_content_divs" onclick="hotelBooking()">Hotel Booking </div>
+            </a>
+            <a href="../PujaBooking/">
+                <div id="pujabooking-div" class="aside_content_divs" onclick="pujaBooking()">Puja Booking </div>
+            </a>
+            <a href="../UjjainDarshan/">
+                <div id="UjjainDarshan-div" class="aside_content_divs" onclick="UjjainDarshan()">Ujjain Darshan </div>
+            </a>
+            <a href="../Omkareshwar/">
+                <div id="Omkareshwar-div" class="aside_content_divs" onclick="Omkareshwar()">Omkareshwar Tour </div>
+            </a>
+            <a href="../MaaBaglamukhi/">
+                <div id="MaaBaglamukhi-div" class="aside_content_divs" onclick="MaaBaglamukhi()">Maa Baglamukhi Tour
+                </div>
+            </a>
+            <a href="../TaxiServices/">
+                <div id="TaxiServices-div" class="aside_content_divs" onclick="TaxiServices()">Taxi Services</div>
+            </a>
+            <a href="../AirportRides/">
+                <div id="AirportRides-div" class="aside_content_divs" onclick="AirportRides()">Airport Rides</div>
+            </a>
+            <a href="../Shopping/">
+                <div id="shopping-div" class="aside_content_divs" onclick="Shopping()">Shopping </div>
+            </a>
+            <a href="../About/">
+                <div id="AboutUjjain-div" class="aside_content_divs" onclick="AboutUjjain()">About Ujjain</div>
+            </a>
+        </aside>
+
+        <main id="Home_main"> <!-- Home main content starts here...... -->
+
+            <section id="our_hotels_sec">
+                <h3 id="our_hotels_h3">Our Hotels</h3>
+                <div id="our_hotels_div">
+                    <div #swiperRef="" class="swiper mySwiper" id="swiper_up">
+                        <div class="swiper-wrapper our_hotels_api" id="swiper-wrapper_up">
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                            <div class="swiper-slide homeslides"></div>
+                        </div>
+                    </div>
+                    <div class="next_prev_btn_up_div">
+                        <div class="swiper-button-next" id="swiper-button-next_up" onclick="swiperBtn_up()"></div>
+                        <div class="swiper-button-prev hotelbooking_prev_down" id="prev_down_hotelBooking"></div>
+                    </div>
+                </div>
+                <!--    img  Loader  while fetching data from API...    -->
+                <div id="home_our_hotel_loader" class="Top_loader ">
+                    <!-- <div class="loader"></div> -->
+                    <img class="Loader_img zoom-in-zoom-out" src="../Images/ujjain_logo_png.png" alt="">
+                </div>
+            </section>
+
+            <section id="home_top_rated_sec">
+                <h3 style="margin-top: 0%;">Top Visited Places</h3>
+                <div id="home_top_rated_divs">
+                    <div #swiperRef="" class="swiper mySwiper" id="swiper_down">
+                        <div class="swiper-wrapper" id="swiper-wrapper_down">
+                            <div class="swiper-slide home_slides_down"></div>
+                            <div class="swiper-slide home_slides_down"></div>
+                            <div class="swiper-slide home_slides_down"></div>
+                            <div class="swiper-slide home_slides_down"></div>
+                            <div class="swiper-slide home_slides_down"></div>
+                            <div class="swiper-slide home_slides_down"> </div>
+                            <div class="swiper-slide home_slides_down"> </div>
+                        </div>
+                    </div>
+                    <div class="next_prev_btn_down_div">
+                        <div class="swiper-button-next" id="swiper-button-next_down" onclick="swiperBtn_down()"></div>
+                        <div class="swiper-button-prev" id="swiper-button-prev_down"> </div>
+                    </div>
+                </div>
+                <!--    img  Loader  while fetching data from API...    -->
+                <div id="home_TopVisitedplaces_loader" class="bottum_loader ">
+                    <img class="Loader_img_bottum zoom-in-zoom-out" src="../Images/ujjain_logo_png.png" alt="">
+                </div>
+            </section>
+        </main>
+        
+    </section>
+<script src="../JavaScript/Sliders/homeSliderDown.js"></script>
+
+</body>
+</html>
